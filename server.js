@@ -22,9 +22,9 @@ app.get("/", function (req, res) {
 // your first API endpoint...
 
 app.get('/api/whoami', function (req, res) {
- res.route('https://api.ipify.org?format=json');
+ //res.json({ip:{}});
+console.log(req.query)
 });
-
 
 
 // listen for requests :)
