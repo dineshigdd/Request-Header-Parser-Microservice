@@ -23,7 +23,7 @@ app.get("/", function (req, res) {
 
 
 app.get('/api/whoami', function (req, res) {
- res.json({ ip:req.headers });
+ res.json({ ip:req.header('ip')});
 //console.log(req.headers)
 });
 
