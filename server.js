@@ -19,9 +19,10 @@ app.get("/", function (req, res) {
 });
 
 
-// your first API endpoint... 
-app.get("/api/whoami", function (req, res) {
-  res.json(res.send());
+// your first API endpoint...
+app.route('/api/whoami')
+app.get('/api.ipify.org?format=json', function (req, res) {
+  res.json({ip: req.params});
 });
 
 
