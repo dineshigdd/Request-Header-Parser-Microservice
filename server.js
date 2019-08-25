@@ -21,7 +21,7 @@ app.get("/", function (req, res) {
 
 // your first API endpoint... 
 app.get("/api/whoami", function (req, res) {
-  res.json({IP: req.query.whoami});
+  res.json({IP:'https://api.ipify.org?format=json'});
 });
 
 
