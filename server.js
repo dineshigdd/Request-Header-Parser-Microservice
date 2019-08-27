@@ -27,7 +27,7 @@ app.get('/api/whoami', function (req, res) {
             software:req.header('user-agent')
           
           });
-  console.log(req.headers)
+
 });
 
 
